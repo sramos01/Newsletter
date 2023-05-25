@@ -31,10 +31,10 @@ app.post("/",function(req,res){
         ]
     };
     const jsonData= JSON.stringify(data);
-    const url = "https://us21.api.mailchimp.com/3.0/lists/2c7ec71fe6";
+    const url = "https://us21.api.mailchimp.com/3.0/lists/removed";
     const options={
         method:"POST",
-        auth:"dani:84d1deab5786142910919546609a1107-us21",
+        auth:"dani:removed",
     }
 
     const request = https.request(url,options,function(response){
@@ -54,9 +54,3 @@ app.post("/",function(req,res){
 app.post("/failure", function(req,res){
     res.redirect("/");
 });
-
-// APIKEY
-// 84d1deab5786142910919546609a1107-us21
-
-// audience Id
-// 2c7ec71fe6
